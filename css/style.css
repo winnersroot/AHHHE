@@ -4,7 +4,7 @@
 ::after {
 	padding: 0;
 	marging: 0;
-	box-sizing: border-box;
+	/* box-sizing: border-box; */
 }
 .body{
 	width: 1500px;
@@ -47,5 +47,76 @@
 /*-END_ABOUT_US------------------------------------*/
 
 
-
-
+.services {
+	height: 790px;
+	min-width: 1200px;
+	background-color: #70bfff;
+	display: flex;
+	justify-content: center;
+	box-sizing: border-box;
+}
+.services_item {
+	width: 50%;
+	padding-top: 22px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: center;
+	margin-right: 200px;
+}
+.servises_button {
+	margin: 10px;
+	display: flex;
+	align-items: center;
+	background-color: #ffffff;
+	width: 400px;
+	height: 100px;
+	font: 700 20px/27px 'Raleway', sans-serif;
+	color:  #262626;
+	text-align: center;
+}
+.button_name {
+	flex-grow: 1;
+}
+.servises_svg {
+	width: 100px;
+	height: inherit;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-left: 1px solid #9d9d9d;
+	flex-shrink: 0;
+}
+.bucket {
+	width: 47px;
+	height: 44px;
+}
+.carrot {
+	width: 55px;
+	height: 55px;
+}
+.hand {
+	width: 55px;
+	height: 49px;
+}
+.world {
+	width: 54px;
+	height: 54px;
+}
+.services_title {
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	min-width: 490px;
+	position: relative;
+	padding-bottom: 60px;
+}
+.services_title--h1 {
+	color: white;
+	position: absolute;
+	left: -83px;
+	top: 290px;
+	font-size: 90px;
+	font-weight: 800;
+}
