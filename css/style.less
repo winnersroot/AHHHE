@@ -1,0 +1,147 @@
+/*-@variablse------------------------------------*/
+@font: 'Raleway', sans-serif;
+@colorDark: rgb(38, 38, 38);
+@colorLight: rgb(255, 255, 255);
+@shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+
+/*--@variablse------------------------------------*/
+/*--MIXINS----------------------------------------*/
+ .fonts(@font, @color: @colorDark, @size: 15px, @weight: 300, @lineH: 25px) {
+ 	font-family: @font;
+ 	font-size: @size;
+ 	font-weight: @weight;
+ 	line-height: @lineH;
+ 	color: @color;
+ }
+
+ .myHover() {
+   &:hover {
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+   }
+ }
+ /*--END_MIXINS----------------------------------------*/
+
+/*-GENERAL------------------------------------*/
+*,
+::before,
+::after {
+	padding: 0;
+	marging: 0;
+	/* box-sizing: border-box; */
+}
+.body{
+	width: 1500px;
+}
+.content {
+	text-align: left
+}
+
+.content_title {
+	font-family: 'Raleway', sans-serif;
+	color:  #262626;
+	font-size: 60px;
+	font-weight: 800;
+	line-height: 25px;
+
+}
+.content_describe {
+	font-family: 'Raleway', sans-serif;
+	color:  #262626;
+	font-size: 17px;
+	font-weight: 300;
+	line-height: 27px;
+}
+.button {
+	background-color:  #ff6033;
+	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+	width: 200px;
+	height: 55px;
+	font-family: 'Raleway', sans-serif;
+	color:  #ffffff;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 27px;
+	text-align: center;
+}
+/*-END_GENERAL------------------------------------*/
+
+/*-ABOUT_US------------------------------------*/
+
+/*-END_ABOUT_US------------------------------------*/
+
+
+.services {
+	height: 790px;
+	min-width: 980px;
+	background-color: #70bfff;
+	display: flex;
+	justify-content: center;
+	box-sizing: border-box;
+}
+.services_item {
+	width: 50%;
+	padding-top: 22px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: center;
+	margin-right: 10%;
+}
+.servises_button {
+	margin: 10px 0;
+	display: flex;
+	align-items: center;
+	background-color: @colorLight;
+	width: 400px;
+	height: 100px;
+ 	.fonts(@font, @colorDark, 20px, 700, 27px);
+	color:  @colorDark;
+	text-align: center;
+	box-shadow: @shadow;
+	.myHover();
+}
+.button_name {
+	flex-grow: 1;
+}
+.servises_svg {
+	width: 100px;
+	height: inherit;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-left: 1px solid #9d9d9d;
+	flex-shrink: 0;
+}
+.bucket {
+	width: 47px;
+	height: 44px;
+}
+.carrot {
+	width: 55px;
+	height: 55px;
+}
+.hand {
+	width: 55px;
+	height: 49px;
+}
+.world {
+	width: 54px;
+	height: 54px;
+}
+.services_title {
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	position: relative;
+	padding-bottom: 60px;
+	min-width: 544px;
+}
+.services_title--h1 {
+	color: white;
+	position: absolute;
+	left: -83px;
+	top: 290px;
+	font-size: 90px;
+	font-weight: 800;
+}
