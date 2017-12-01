@@ -1,17 +1,10 @@
-/*-@variablse------------------------------------*/
-/*--@variablse------------------------------------*/
-/*--MIXINS----------------------------------------*/
-/*--END_MIXINS----------------------------------------*/
 /*-GENERAL------------------------------------*/
 *,
 ::before,
 ::after {
   padding: 0;
   marging: 0;
-  /* box-sizing: border-box; */
-}
-.body {
-  width: 1500px;
+  box-sizing: border-box;
 }
 .content {
   text-align: left;
