@@ -39,6 +39,7 @@
 	font-weight: 300;
 	line-height: 27px;
 	text-align: center;
+	text-transform: uppercase;
 }
 /*-END_GENERAL------------------------------------*/
 
@@ -47,5 +48,84 @@
 /*-END_ABOUT_US------------------------------------*/
 
 
+.gallery {
+	width: 100%;
+	background-color: #ffe92f;
+	font-family: 'Raleway', sans-serif;
+	padding-bottom: 70px;
 
+}
+
+.title {
+	padding-top: 100px;
+	margin-bottom: 29px;
+	text-align: center;
+	font-size: 90px;
+	font-weight: bold;
+}
+
+.describe {
+	text-align: center;
+	font-size: 17px;
+	font-weight: 300;
+	margin-bottom: 41px;
+	line-height: 27px;
+}
+
+.gallery_img {
+	margin: auto;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 1170px;
+	height: 980px;
+}
+
+.gallery_item {
+	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.gallery_item:hover {
+	box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.gallery_container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.gallery_container--main {
+	height: 550px;
+}
+
+.gallery_container--small {
+	margin-left:30px;
+	flex-wrap: wrap;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.gallery_item--big {
+	height: 550px;
+	width: 770px;
+}
+
+.gallery_item--medium {
+	height: 400px;
+	width: 570px;
+}
+
+.gallery_item--small {
+	height: 260px;
+	width: 370px;
+}
+
+.button--blue {
+	display: block;
+	margin: 50px auto;
+	background-color: #5585a2;
+}
 

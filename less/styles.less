@@ -1,0 +1,130 @@
+/*-@variablse------------------------------------*/
+@font: 'Raleway', sans-serif;
+@colorDark: rgb(38, 38, 38);
+@colorLight: rgb(255, 255, 255);
+@shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+
+/*--@variablse------------------------------------*/
+/*--MIXINS----------------------------------------*/
+.fonts(@font, @color: @colorDark, @size: 15px, @weight: 300, @lineH: 25px) {
+  font-family: @font;
+  font-size: @size;
+  font-weight: @weight;
+  line-height: @lineH;
+  color: @color;
+}
+
+.myHover() {
+  &:hover {
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+  }
+}
+/*--END_MIXINS----------------------------------------*/
+
+/*-GENERAL------------------------------------*/
+
+@textAlign: center;
+
+
+.button--blue {
+  box-shadow: @shadow;
+  width: 200px;
+  height: 55px;
+  font-family: @font;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 27px;
+  text-align: @textAlign;
+  text-transform: uppercase;
+  display: block;
+  margin: 50px auto;
+  background-color: #5585a2;
+  color: @colorLight;
+}
+
+
+
+
+
+.gallery {
+  width: 100%;
+  background-color: #ffe92f;
+  font-family: @font;
+  color: @colorDark;
+  padding-bottom: 70px;
+
+
+
+  .title {
+    padding-top: 100px;
+    margin-bottom: 29px;
+    text-align: @textAlign;
+    font-size: 90px;
+    font-weight: bold;
+  }
+
+  .describe {
+    .fonts();
+    text-align: @textAlign;
+    margin-bottom: 41px;
+  }
+
+  .gallery_img {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1170px;
+    height: 980px;
+
+
+    .gallery_container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .gallery_container--main {
+      height: 550px;
+
+      .gallery_item--big {
+        height: 550px;
+        width: 770px;
+      }
+    }
+
+
+
+
+
+
+    .gallery_container--small {
+      margin-left:30px;
+      flex-wrap: wrap;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .gallery_item--small {
+        height: 260px;
+        width: 370px;
+      }
+    }
+
+
+    .gallery_item {
+      box-shadow: @shadow;
+      .myHover
+    }
+
+
+
+    .gallery_item--medium {
+      height: 400px;
+      width: 570px;
+    }
+
+
+
+  }
+
+}
