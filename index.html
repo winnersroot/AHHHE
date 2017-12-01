@@ -12,6 +12,7 @@
 	        <link rel="stylesheet" href="css/normalize.css">
 	        <link href="https://fonts.googleapis.com/css?family=Pacifico|Raleway:400,700,800" rel="stylesheet">
 	        <link rel="stylesheet" href="css/style.css" media="all" />
+					<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>
 </head>
 <body>
 
@@ -33,140 +34,46 @@
 	<!-- END_SVG_SPRITE -->
 
 	<!-- FRESH_LIFE -->
-	<header class="life">
-		<nav class="nav">
-			<div class="logo"></div>
-			<div class="nav_content">
-				<a href="" class="nav_item"></a>
-				<a href="" class="nav_item"></a>
-				<a href="" class="nav_item"></a>
-				<a href="" class="nav_item"></a>
-				<a href="" class="nav_item"></a>
-				<a href="" class="nav_item"></a>
-			</div>
-		</nav>
-		<div class="content">
-			<h1 class="content_title"></h1>
-			<p class="content_describe"></p>
-		</div>
-		<!--<button class="button"></button>
-		<div class="scroll"></div>
-	</header>
-	<!-- END_FRESH_LIFE -->
+	<header class="header">
+        <div class="header_conteiner">
+           <a class="header_logo" href="">Cahee</a>
+           <div class="nav">
+               <a class="nav_link" href="">Home</a>
+               <a class="nav_link" href="#about">About</a>
+               <a class="nav_link" href="#servises">Services</a>
+               <a class="nav_link" href="">Gallery</a>
+               <a class="nav_link" href="">Blog</a>
+               <a class="nav_link" href="">Contact</a>
+           </div>
+           <div class="header_info">
+               <h1 class="header_title">Fresh Life</h1>
+               <p class="header_text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+           </div>
+           <div class="header_btn">
+               <button class="header_btn1">Get Free Now</button>
+           </div>
+           <div class="header_scroll">
+               <a href="#about">
+                   <img src="img/scroll.png" alt="">
+               </a>
+           </div>
+        </div>
+    </header>
 
-	<!-- ABOUT_US -->
-	<div class="about">
-		<img src="" alt="" class="about_img">
-		<div class="content">
-			<h1 class="content_title"></h1>
-			<p class="content_describe"></p>
-		</div>
-	</div>
-	<!-- END_ABOUT_US -->
+		<!-- END_FRESH_LIFE -->
 
-	<!-- SUBSCRIBE -->
-	<div class="subscribe">
-			<div class="content_subscribe">
-					<h2 class="subscribe_title">Subscribe To Us</h2>
-					<p class="content_describe">
-							Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-					</p>
-			</div>
-	<form class="subscribe_form" action="index.html" method="post">
-					<div class="">
-							<input class="subscribe_email" type="email" placeholder="Your email addres...">
-					</div>
-					<div class="button_subscribe"></div>
-					<button class="button button__green">Subscribe</button>
-	</form>
-	</div>
+		<!-- ABOUT US -->
 
-	<!-- End  SUBSCRIBE -->
+    <div class="about">
+        <img src="img/cup.png" alt="">
+        <div class="about_info">
+            <h2 id="about" class="about_title">About Us</h2>
+            <p class="about_text">Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+            <p class="about_text">Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
+        </div>
+    </div>
 
-	<!-- BLOG -->
-	<div class="blog">
-			<div class="content_blog">
-					<h1 class=" content_title__blog ">Blog</h1>
-					<p class=" content_describe__blog">
-							Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.
-					</p>
-			</div>
-
-			<div class="blog_events">
-					<div class="event event__1">
-							<time class="event_date">20<br> nov</time>
-							<h3 class="event_title">Green Smoothies: Too Much of a Good Thing? </h3>
-							<p class="event_autor">By Auskteez - 2 hour</p>
-					</div>
-					<div class="event  event__2">
-							<time class="event_date">14 nov</time>
-							<h3 class="event_title">Growing Food and a “Thirst” for Innovation</h3>
-							<p class="event_autor">By Auskteez - 3 hour</p>
-					</div>
-					<div class="event  event__3">
-							<time class="event_date">10 nov</time>
-							<h3 class="event_title">Pesticides & Food: What You Need to Know </h3>
-							<p class="event_autor">By Auskteez - 6 hour</p>
-					</div>
-			</div>
-			<div class="blog_btn">
-					<button class="button button__crimson">View More</button>
-			</div>
-
-	<!-- OUR_SERVICES -->
-	<div class="services">
-
-
-		<div class="services_item">
-			<div class="servises_button">
-				<span class="button_name">Online Shopping</span>
-				<div class="servises_svg">
-					<svg class="bucket">
-						<use xlink:href="#bucket">
-						</use>
-					</svg>
-				</div>
-			</div>
-			<div class="servises_button">
-				<span class="button_name">Quality Product</span>
-				<div class="servises_svg">
-					<svg class="hand">
-						<use xlink:href="#hand">
-						</use>
-					</svg>
-				</div>
-			</div>
-			<div class="servises_button">
-				<span class="button_name">Domestic & International Delivery</span>
-				<div class="servises_svg">
-					<svg class="world">
-						<use xlink:href="#world">
-						</use>
-					</svg>
-				</div>
-			</div>
-
-			<div class="servises_button">
-				<span class="button_name">Well Organized</span>
-				<div class="servises_svg">
-					<svg class="carrot">
-						<use xlink:href="#carrot">
-						</use>
-					</svg>
-				</div>
-			</div>
-		</div>
-		<div class="services_title">
-			<div class="services_img">
-				<img src="img/services_tomatoes.png" alt="">
-			</div>
-			<h1 class="content_title services_title--h1">Our Services</h1>
-			</div>
-		</div>
-	</div>
-
-
-	<!-- END_OUR_SERVICES -->
+		<!-- END ABOUT US -->
 
 </body>
 </html>
