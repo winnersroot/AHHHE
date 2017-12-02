@@ -11,9 +11,9 @@
 	        <link rel="stylesheet" href="css/normalize.css">
 	        <link href="https://fonts.googleapis.com/css?family=Pacifico|Raleway:400,700,800" rel="stylesheet">
 	        <link rel="stylesheet" href="css/style.css" media="all" />
+					<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>
 </head>
 <body>
-
 	<!-- SVGSPRITE -->
 	<svg style="display:none">
 	    <symbol id="bucket">
@@ -30,40 +30,44 @@
 	    </symbol>
 	</svg>
 	<!-- END_SVG_SPRITE -->
-
 	<!-- FRESH_LIFE -->
-	<header class="life">
-		<nav class="nav">
-			<div class="logo"></div>
-			<div class="nav_content">
-				<a href="" class="nav_item"></a>
-				<a href="" class="nav_item"></a>
-				<a href="" class="nav_item"></a>
-				<a href="" class="nav_item"></a>
-				<a href="" class="nav_item"></a>
-				<a href="" class="nav_item"></a>
-			</div>
-		</nav>
-		<div class="content">
-			<h1 class="content_title"></h1>
-			<p class="content_describe"></p>
-		</div>
-		<button class="button"></button>
-		<div class="scroll"></div>
-	</header>
-	<!-- END_FRESH_LIFE -->
-
-	<!-- ABOUT_US -->
-	<div class="about">
-		<img src="" alt="" class="about_img">
-		<div class="content">
-			<h1 class="content_title"></h1>
-			<p class="content_describe"></p>
-		</div>
-	</div>
-	<!-- END_ABOUT_US -->
-
-	<!--GALLERY-->
+	<header class="header">
+        <div class="header_conteiner">
+           <a class="header_logo" href="">Cahee</a>
+           <div class="nav">
+               <a class="nav_link" href="">Home</a>
+               <a class="nav_link" href="#about">About</a>
+               <a class="nav_link" href="#servises">Services</a>
+               <a class="nav_link" href="">Gallery</a>
+               <a class="nav_link" href="">Blog</a>
+               <a class="nav_link" href="">Contact</a>
+           </div>
+           <div class="header_info">
+               <h1 class="header_title">Fresh Life</h1>
+               <p class="header_text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+           </div>
+           <div class="header_btn">
+               <button class="header_btn1">Get Free Now</button>
+           </div>
+           <div class="header_scroll">
+               <a href="#about">
+                   <img src="img/scroll.png" alt="">
+               </a>
+           </div>
+        </div>
+    </header>
+		<!-- END_FRESH_LIFE -->
+		<!-- ABOUT US -->
+    <div class="about">
+        <img src="img/cup.png" alt="">
+        <div class="about_info">
+            <h2 id="about" class="about_title">About Us</h2>
+            <p class="about_text">Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+            <p class="about_text">Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
+        </div>
+    </div>
+		<!-- END ABOUT US -->
+  <!--GALLERY-->
 	<div class="gallery">
 		<div class="title">Gallery</div>
 		<div class="describe">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
@@ -77,7 +81,6 @@
 				<div class="gallery_container gallery_container__small">
 					<img src="img/gallery_item2.jpg" alt="" class="gallery_item gallery_item__small">
 					<img src="img/gallery_item3.jpg" alt="" class="gallery_item gallery_item__small">
-
 				</div>
 			</div>
 			<div class="gallery_container">
@@ -90,47 +93,5 @@
 	<!--END_GALLERY-->
 
 
-
-
-
 </body>
 </html>
-
-
-.services (Лена)
-    .services_item
-        .servises_button
-            .servises_text
-.svg
-.services_item
-    . .services_img (позиционирование)
-    .title (позиционирование) + модификатор center
-.gallery (Саша )
-    .title
-    .describe
-    .gallery_img (делаем grid)
-        .gallery_item
-    Button (модификатор)
-
-.subscribe (Лена+Женя)
-    .subscribe_title
-    .subscribe_describe
-    . subscribe_input
-    Button (модификатор)
-.blog (Лена+Женя)
-    .title
-    .describe
-    .blog _img (делаем grid)
-    .blog _item
-    Button (модификатор)
-
-.contact (мой)
-    .title
-    .describe
-
-  .contact_subscription
-        .button (модификаторы)
-    .contact _address
-        .address_name
-        .address_???
-.footer (мой)
