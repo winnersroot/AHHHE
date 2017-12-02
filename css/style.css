@@ -1,3 +1,11 @@
+<<<<<<< HEAD
+
+*, :after, :before {
+    padding: 0;
+    marging: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+=======
 *,
 ::before,
 ::after {
@@ -7,6 +15,7 @@
 }
 .content {
   text-align: left;
+>>>>>>> 86f2b128a2c6a04c0e3b22e2a81d179f523f3f2d
 }
 svg {
     width: 0;
